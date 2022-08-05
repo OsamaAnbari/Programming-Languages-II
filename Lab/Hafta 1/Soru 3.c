@@ -1,3 +1,5 @@
+// S3. Aşağıdaki kod parçalarını yazarak ekran çıktılarını yorumlayınız
+
 #include <stdio.h>
 #include <time.h>
 
@@ -18,3 +20,11 @@ int main(void){
 	printf("End degeri %lu\n", end_t);
 	printf("Dongu calisma suresi %.3f", (double)(end_t - start_t) / CLOCKS_PER_SEC );
 }
+
+/*
+Outputs:
+
+Start degeri 0
+End degeri 140
+Dongu calisma suresi 0.140
+*/
