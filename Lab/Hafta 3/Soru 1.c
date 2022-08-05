@@ -1,6 +1,6 @@
 /*
-Soru 1: Main fonksiyonu içerisinde verilen bir dogal sayiya kadar olan (bu sayi dahil) tüm sayilarin 
-toplamini rekürsif bir fonksiyon kullanarak hesaplayaniz.
+Soru 1: Main fonksiyonu iÃ§erisinde verilen bir dogal sayiya kadar olan (bu sayi dahil) tÃ¼m sayilarin 
+toplamini rekÃ¼rsif bir fonksiyon kullanarak hesaplayaniz.
 */
 
 #include <stdio.h>
