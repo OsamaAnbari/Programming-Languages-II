@@ -1,9 +1,10 @@
+// S1. Aşağıdaki kod parçasının ekran çıktısı nasıl olmalıdır? 
+
 #include <stdio.h>
-#include <stdlib.h>
 
 int x = 5;
 
-int main(int argc, char *argv[]) {
+int main(void) {
 	
 	{
 		int x=10, y=20;
@@ -25,3 +26,12 @@ int main(int argc, char *argv[]) {
 	
 	return 0;
 }
+
+/*
+Outputs:
+
+x = 10, y = 20
+x = 11, y = 41
+x = 11, y = 20
+x= 5
+*/
