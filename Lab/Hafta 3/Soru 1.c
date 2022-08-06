@@ -4,9 +4,6 @@ toplamini rekürsif bir fonksiyon kullanarak hesaplayaniz.
 */
 
 #include <stdio.h>
-#include <stdlib.h>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int calculate(int x){
 	if(x==0){
@@ -16,7 +13,7 @@ int calculate(int x){
 	}
 }
 
-int main(int argc, char *argv[]) {
+int main(void) {
 	
 	int x,y;
 	printf("Enter the Number: ");
