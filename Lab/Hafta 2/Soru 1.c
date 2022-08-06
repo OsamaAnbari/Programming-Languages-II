@@ -12,9 +12,6 @@ how many students failed and return it from function, and print the class averag
 */
 
 #include <stdio.h>
-#include <stdlib.h>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int calculate(int stdnum, int pasgrd){
 	int grades[stdnum];
@@ -38,7 +35,7 @@ int calculate(int stdnum, int pasgrd){
 	return fail;
 }
 
-int main(int argc, char *argv[]) {
+int main(void) {
 	
 	int stdnum, pasgrd;
 	
