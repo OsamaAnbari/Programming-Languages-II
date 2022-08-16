@@ -5,26 +5,35 @@ resulting array to scree. (Use dynamic memory allocation.)
 */
 
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
+
+void enter(int *arr, int size){
+	int i;
+	for(i=0 ; i<size ; i++){
+		printf("Enter Element %d: ",i+1);
+		scanf("%d",arr+i);
+	}
+}
+
+void show(int *arr, int size){
+	int i;
+	for(i=0 ; i<size ; i++){
+		printf("\nThe Element %d: %d",i+1,*(arr+i));
+	}
+}
 
 int main(void){
-	int a;
-	char *arr;
-	
-	printf("Enter the Size of Array: ");
-	scanf("%d",&a);
-	
-	arr = (char*)calloc(a, sizeof(char));
-	
-	int i;
-	for(i=0 ; i<a ; i++){
-		printf("Enter the Value %d: ",i+1);
-		scanf("%c",arr+i);
-	}
-	
-	printf("%s",arr);
-	
-	arr = (char*)realloc(arr, (a-3)*sizeof(char));
-	
-	printf("%s",arr);
+	 int *arr;
+	 int a,b;
+	 printf("Enter Size of Array : ");
+	 scanf("%d",&a);
+	 arr = (int*)calloc(a,sizeof(int));
+	 enter(arr,a);
+	 
+	 printf("Enter Size of New Elements : ");
+	 scanf("%d",&b);
+	 arr = (int*)realloc(arr,(a+b)*sizeof(int));
+	 enter(arr+a,b);
+	 
+	 show(arr,a+b);
 }
